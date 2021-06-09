@@ -9,7 +9,7 @@ import javafx.scene.image.ImageView;
 import java.io.File;
 
 public class Controller {
-    public ImageView playerImage;
+    public static ImageView playerImage;
     public TextField mainText;
     public ImageView enemyImage;
     public Button importDungeon;
@@ -19,6 +19,13 @@ public class Controller {
     private void importPressed() {
         mainText.setText("YOU PRESSED THE BUTTON!");
 
+        File file = new File("finalHero.PNG");
+        Image heroImage = new Image(file.toURI().toString());
+        playerImage.setImage(heroImage);
+    }
+
+
+    public static void initialize() {
         File file = new File("finalHero.PNG");
         Image heroImage = new Image(file.toURI().toString());
         playerImage.setImage(heroImage);
