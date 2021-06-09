@@ -19,7 +19,7 @@ public class Controller {
     private void importPressed() {
         mainText.setText("YOU PRESSED THE BUTTON!");
 
-        File file = new File("newHero.PNG");
+        File file = new File("finalHero.PNG");
         Image heroImage = new Image(file.toURI().toString());
         playerImage.setImage(heroImage);
     }
