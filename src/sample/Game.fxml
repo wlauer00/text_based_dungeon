@@ -21,11 +21,11 @@
                         </VBox>
                         <VBox prefHeight="568.0" prefWidth="287.0">
                            <children>
-                              <TextFlow fx:id="mainText" prefHeight="572.0" prefWidth="287.0">
+                              <TextField fx:id="mainText" prefHeight="572.0" prefWidth="287.0">
                                  <opaqueInsets>
                                     <Insets />
                                  </opaqueInsets>
-                              </TextFlow>
+                              </TextField>
                            </children>
                         </VBox>
                         <VBox prefHeight="568.0" prefWidth="275.0" >
@@ -37,7 +37,7 @@
                   </HBox>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="importDungeon" mnemonicParsing="false" prefHeight="79.0" prefWidth="255.0" text="Import Dungeon" />
+                        <Button fx:id="importDungeon" onAction="#importPressed" mnemonicParsing="false" prefHeight="79.0" prefWidth="255.0" text="Import Dungeon" />
                         <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="369.0" text="Button" />
                         <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="246.0" text="Button" />
                      </children>
